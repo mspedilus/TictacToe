@@ -1,0 +1,54 @@
+:root {
+    --blue: #3f84df;
+  }
+
+/*Syling for the status bar*/
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Styling for the gameboard*/
+.board{
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/*cell styling*/
+.cell{
+    font-size: 100px;
+    line-height: 130px;
+    cursor: pointer;
+    text-align: center;
+    user-select: none;
+    border-bottom: 5px solid black;
+    border-right: 5px solid black;
+}
+
+/*Removes excess borders to create the tic tac toe board*/
+.cell:nth-child(3n){
+    border-right: none;
+}
+
+.cell:nth-child(n+7){
+    border-bottom: none;
+}
+
+.cell.highlight{
+    background-color: var(--blue);
+}
+
+/*Restart button styling*/
+button {
+    margin-left: 47%;
+    margin-right: 61%
+    margin: 50px;
+    padding: 10px;
+    background-color: var(--blue);
+    color: white;
+    transition: 200ms transform;
+  }
