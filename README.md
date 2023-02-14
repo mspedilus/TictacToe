@@ -1,5 +1,4 @@
-# HW 2
-## COT 4930 - Full Stack Web Development
+# TictacToe
 
 Tic Tac Toe Game made with HTML, CSS, JavaScript, jQuery, and Bootstrap5
 files include hw2.html, styles.css, and script.js
